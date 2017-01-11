@@ -18,9 +18,23 @@
 
     <Button
         android:id="@+id/japaClick"
-        android:layout_below="@+id/mJapa"
-        android:text="@string/counter"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mJapa"
+        android:text="@string/counter" />
 
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/japaClick">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter you name"
+            android:maxLength="20"
+            android:singleLine="true" />
+`
+    </android.support.design.widget.TextInputLayout>
 </RelativeLayout>
